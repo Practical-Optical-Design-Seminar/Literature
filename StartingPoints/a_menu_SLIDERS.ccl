@@ -1,0 +1,78 @@
+/////////////////////////////////
+//                             //
+// Sections (use to search):   //
+//                             //
+// Main window menu            //
+// Slider Menus                //
+//                             //
+/////////////////////////////////
+// SLIDERS version 2004.02.26
+/////////////////////////////////
+//                             //
+// Main window menu            //
+//                             //
+/////////////////////////////////
+
+menu Main_Menubar
+{
+	"F,File"       = "$File",
+	"L,Lens"       = "$Lens",
+	"E,Evaluate"   = "$SurfEval",
+	"O,Optimize"   = "$Optimize",
+	"T,Tolerance"  = "$Tolerance",
+	"S,Source"     = "$Sources",
+	"o,Tools"      = "$Tools",
+	"W,Window"     = "$Window",
+	"D,SLIDERS"    = "$SLIDERS",  //Added for SLIDERS
+	"H,Help"       = "$Help",
+}
+// ===========================================================================================================
+// ===========================================================================================================
+// SLIDERS
+// ===========================================================================================================
+// ===========================================================================================================
+menu SLIDERS
+{
+	"R,2 mirror telescopes"					= "RS2inf_sldrs",
+	"C,Classroom Demonstrations"				= "$ClassDemos",
+	"O,'Optical Design by Pictures', Applied Optics paper"	= "$Pictures",
+	"U,'Unobstructed Spherical Mirror Systems', Ph.D. Thesis"	= "$SphereMirrors",
+	"S,Conic Telescope Systems, D. Korsch equations"	= "$Telescopes",
+	"A,About SLIDERS"					= "aboutSLIDERS",
+}
+menu ClassDemos
+{
+	"S,Seidel Aberration Viewer..."    	= "sl_3rd",
+	"D,Doublet Design..."              	= "sl_doublet",
+	"T,Triplet Bending..."             	= "open public \"len/demo/edu/demotrip.len\";sl_trip 0.0;",
+}
+menu Pictures
+{
+	"1,Example 1: Achromatic microscope objective"		= "Micro_4",
+	"2,Example 2: 3 spherical mirror telescope"		= "three_mirINF_sldrs",
+	"3,Example 3: 3 concentric sphere relay"		= "Concentric_3Sphere_sldrs",
+}
+menu Telescopes
+{
+	"2,2 mirror telescopes"			= "RS2inf_sldrs",
+	"3,3 mirror telescopes"			= "RS3inf_sldrs",
+	"4,4 mirror telescopes"			= "RS4inf_sldrs",
+}
+menu SphereMirrors
+{
+	"1, 1 Mirror -- Finite Conjugate"		= SM1_sldrs,
+	"1, 1 Mirror -- Object at INF"			= SM1INF_sldrs,
+	"2, 2 Mirror -- Finite Conjugate"		= SM2_sldrs,
+	"2, 2 Mirror -- Object at INF"			= SM2INF_sldrs,
+	"2, 2 Mirror -- Afocal"				= SM2afo_sldrs,
+	"3, 3 Mirror -- Finite Conjugate"		= SM3_sldrs,
+	"3, 3 Mirror -- Object at INF"			= SM3INF_sldrs,
+	"2, 3 Mirror -- Afocal"				= SM3afo_sldrs,
+	"4, 4 Mirror -- Finite Conjugate"		= SM4_sldrs,
+	"4, 4 Mirror -- Object at INF"			= SM4INF_sldrs,
+}
+// ===========================================================================================================
+// ===========================================================================================================
+// END SLIDERS
+// ===========================================================================================================
+// ===========================================================================================================
